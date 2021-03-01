@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FCC: Product Landing</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<style>
+		nav{
+			background-color: orange;
+		}
+
+		#cimg{
+			background-image: url("https://images.unsplash.com/photo-1447301109594-8bd2cc7129fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080");
+			background-repeat: no-repeat;
+			background-size: 100% 120%;
+
+		}
+
+		#cimg>div{
+			text-align: center;
+			color:white;
+			font-size:20px;
+		}
+
+		hr{
+			border: none;
+			height: 4px;
+			background: black;
+		}
+
+		hr.above{
+			border:none;
+			height: 2px;
+			background: white;
+		}
+
+		input[type=email]{
+			padding:5px;
+ 			margin: 8px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+ 			border-radius: 2px;
+  			box-sizing: border-box;
+  			font-size: 16px;
+  			margin-bottom: 25px;
+		}
+
+		input[type=submit]{
+			padding:5px;
+ 			margin: 8px 0;
+  			display: inline-block;
+  			border: 1px solid black;
+ 			border-radius: 2px;
+  			box-sizing: border-box;
+  			font-size: 16px;
+  			background-color: orange;
+  			color:black;
+		}
+
+		.features-content{
+			display: block;
+			margin: 30px 15%;
+			font-family: 'Raleway', sans-serif;
+		}
+
+		.features-icon{
+			align-self: center;
+		}
+
+		#container{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}	
+
+		#container>div{
+			border: 1px solid #dee2e6;
+    		border-radius: 0.6em;
+			font-size: 20px;
+			margin: 30px;
+			padding: 20px;
+			width: 300px;
+			box-shadow: 0px 1px 18px 6px #A0A0A0;
+    		transition: all 0.25s ease-in;
+    		text-align: center;
+    		font-family: 'Raleway', sans-serif;
+		}
+
+		#h3{
+			width: 250px;
+			background-color: orange;
+			color: black;
+			border-radius: 25px;
+		}
+
+		#price{
+			width: 250px;
+			background-color: black;
+			color: orange;
+			border-radius: 25px;
+		}
+
+		.footer {
+  			left: 0;
+   			bottom: 0;
+  			width: 100%;
+   			background-color: black;
+   			color: yellow;
+   			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<nav class="navbar fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="https://raw.githubusercontent.com/alfranc/alfranc.github.io/master/original_trombones.png" width="300px">
+				</a>
+			</div>
+			<div style="position: fixed; margin-left: 315px">
+				<a style="text-decoration: none; color: black; font-weight: bold; margin:10px;" href="#first">Features</a>
+				<a style="text-decoration: none; color: black; font-weight: bold; margin: 10px" href="#second">How It Works</a>
+				<a style="text-decoration: none; color: black; font-weight: bold; margin:10px;" href="#forth">Pricing</a>
+			</div>
+		</nav>
+	</div>
+
+	<div id="cimg" class="container-fluid">
+		<div>
+			<img src="https://raw.githubusercontent.com/alfranc/alfranc.github.io/master/original_trombones.png" width="90%" style="margin-top: 80px;">
+		</div>
+		<br>
+		<div>
+			Handcrafted, home-made masterpieces
+		</div>
+		<br>
+		<hr class="above">
+		<div>
+		<form>
+			<span>
+			<input type="email" name="email" placeholder="Enter your email address">
+			</span>
+			<span align="right">
+				<input class="btn btn-primary" type="submit" value="Get Started">
+			</span>	
+		</form>
+		</div>
+	</div>
+	<div class="fluid container">
+
+	<div class="features-content">
+		<div class="features-desc">
+			<div id="first"></div>
+			<h2>Premium Materials</h2>
+			<p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+		</div>
+	</div>
+	<hr>
+	<div class="features-content">
+		<div class="features-desc">
+			<h2>Fast Shipping</h2>
+			<p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+		</div>
+	</div>
+	<hr>
+	<div class="features-content">
+		<div class="features-desc">
+			<h2>Quality Assurance</h2>
+			<p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+		</div>
+	</div>
+	<hr>
+	</div>
+	<br>
+	<div>
+		<center><iframe id="second" width="615" height="350" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+	</div>
+	<br>
+	<br>
+	<div id="container">
+		<div id="third">
+			<h3 id="h3">Tenor Trombone</h3>
+			<p id="price">$600</p>
+			<div>lorem ipsum</div>
+			<div>lorem ipsum</div>
+			<div>lorem ipsum</div>
+			<div>
+				<input style="border-radius: 25px; width: 100px" type="submit" value="Select" class="btn btn-primary">
+			</div>
+		</div>
+		<div id="forth">
+			<h3 id="h3">Bass Trombone</h3>
+			<p id="price">$900</p>
+			<div>lorem ipsum</div>
+			<div>lorem ipsum</div>
+			<div>lorem ipsum</div>
+			<div>
+				<input style="border-radius: 25px; width: 100px" type="submit" value="Select" class="btn btn-primary">
+			</div>
+		</div>
+		<div id="fifth">
+			<h3 id="h3">Valve Trombone</h3>
+			<p id="price">$1200</p>
+			<div>lorem ipsum</div>
+			<div>lorem ipsum</div>
+			<div>lorem ipsum</div>
+			<div>
+				<input style="border-radius: 25px; width: 100px" type="submit" value="Select" class="btn btn-primary">
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="footer">
+  		<p>"Copyright 2018, <br>Original Trombones"</p>
+	</div>
+
+</body>
+</html>
